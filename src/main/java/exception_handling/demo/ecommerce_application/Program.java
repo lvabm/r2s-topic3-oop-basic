@@ -1,5 +1,7 @@
 package exception_handling.demo.ecommerce_application;
 
+import helper.InputHelper;
+
 import java.util.Scanner;
 
 public class Program {

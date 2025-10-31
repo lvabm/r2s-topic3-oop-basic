@@ -1,5 +1,7 @@
 package exception_handling.demo.ecommerce_application;
 
+import helper.InputHelper;
+
 public class ProductManagement {
   private final Product[] products = new Product[10];
   private int productCount = 0;
@@ -61,7 +63,7 @@ public class ProductManagement {
 
     newProduct.setProductID(newProductID);
     newProduct.setName(InputHelper.readString("Product Name: "));
-    newProduct.setPrice(InputHelper.readDouble("Product Price: "));
+    newProduct.setPrice(InputHelper.readFloat("Product Price: "));
     newProduct.setQuantityInStock(InputHelper.readInt("Quantity In Stock: "));
 
     currentProduct = newProduct;
